@@ -49,7 +49,7 @@ The critical CSS (between `critical:start` and `critical:end` in `styles.css`) i
 
 Motion respects "reduce motion": nothing moves and every section is visible. With JavaScript off, everything is visible and the hero shows its first photo.
 
-## 19 October 2026 update: what changed
+## 19 October 2026 update: what changed .
 
 - **What we supply:** the "+ add to quote" buttons, the hint line and the floating order pill are gone. The eight categories are now a shelf of coloured cards, each in the colour of what it holds (leaf for produce, coral for meat, sea blue for fish, and so on), with a line drawing, the delivery rhythm and the products. On phones each card shows only the drawing, the name, a three-word summary and the delivery rhythm.
 - **How we work:** four coloured cards (Source → Store → Cook → Deliver) that stack as you scroll. Each card sticks, the next one slides over it, the card underneath shrinks and darkens, and each photo settles from a slight zoom. Same effect on phone and desktop; texts are one short sentence each. With "reduce motion" on, the cards still stack but nothing scales.

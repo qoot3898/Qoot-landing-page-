@@ -251,21 +251,34 @@
     city.addEventListener("pointerleave", off);
   });
 
-  /* The quote coupon: ticked categories are listed on the stub */
+  /* The quote coupon: what is typed in "What do you need?" is listed on the stub,
+     one item per comma or line */
   var form = document.getElementById("quote-form");
-  var boxes = form ? $$("input[name=need]", form) : [];
+  var need = form ? form.elements.need : null;
   var sumList = $(".os-list");
   var emptyText = sumList ? sumList.getAttribute("data-empty") : "";
+  var items = function () {
+    return (need && need.value ? need.value : "").split(/[,\u060C;\u061B\n]+/)
+      .map(function (s) { return s.trim(); }).filter(Boolean);
+  };
   var sync = function () {
     if (!sumList) return;
-    var picked = boxes.filter(function (b) { return b.checked; });
+    var list = items();
     sumList.innerHTML = "";
-    if (!picked.length) {
+    if (!list.length) {
       var li = document.createElement("li"); li.className = "os-empty"; li.textContent = emptyText; sumList.appendChild(li);
     }
-    picked.forEach(function (b) { var li = document.createElement("li"); li.textContent = b.value; sumList.appendChild(li); });
+    list.slice(0, 8).forEach(function (s) {
+      var li = document.createElement("li");
+      li.textContent = s.length > 32 ? s.slice(0, 31) + "…" : s;
+      sumList.appendChild(li);
+    });
   };
-  boxes.forEach(function (b) { b.addEventListener("change", sync); });
+  if (need) need.addEventListener("input", function () {
+    sync();
+    var st = form.querySelector(".quote-status");
+    if (st && st.textContent === form.dataset.msgNone && items().length) st.textContent = "";
+  });
   sync();
 
   /* 4. FAQ: smooth open and close ---------------------------------------- */
@@ -296,12 +309,12 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var t = form.dataset;
-      var picked = boxes.filter(function (i) { return i.checked; }).map(function (i) { return i.value; });
+      var picked = items();
       var val = function (n) { var el = form.elements[n]; return el && el.value ? el.value.trim() : ""; };
       var status = form.querySelector(".quote-status");
       if (!picked.length) {
         if (status) status.textContent = t.msgNone;
-        boxes[0].focus();
+        if (need) need.focus();
         return;
       }
       var org = val("organisation");
@@ -319,4 +332,47 @@
       window.location.href = "mailto:" + form.dataset.to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
     });
   }
+})();
+
+/* Location: open or closed right now, by the clock in Benghazi ---------------
+   Hours and words come from the data attributes on [data-hours]; without script the
+   hours list alone is shown. */
+(function () {
+  var box = document.querySelector("[data-hours]");
+  if (!box || !window.Intl) return;
+  var fmt;
+  try {
+    fmt = new Intl.DateTimeFormat("en-GB", { timeZone: box.dataset.tz, weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  } catch (e) { return; }
+  var now = box.querySelector(".visit-now"), clock = box.querySelector(".visit-clock");
+  var rows = document.querySelectorAll(".visit-hours [data-days]");
+  var open = box.dataset.openDays.split(",").map(Number);
+  var names = box.dataset.days.split(",");
+  var from = box.dataset.from, to = box.dataset.to;
+  var WD = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  function mins(t) { var p = t.split(":"); return +p[0] * 60 + +p[1]; }
+  function fill(s, o) { return s.replace(/\{(\w+)\}/g, function (_, k) { return o[k]; }); }
+  function tick() {
+    var p = {};
+    fmt.formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    var day = WD[p.weekday], m = +p.hour * 60 + +p.minute;
+    var openDay = open.indexOf(day) > -1;
+    var isOpen = openDay && m >= mins(from) && m < mins(to);
+    var msg;
+    if (isOpen) msg = fill(box.dataset.lOpen, { to: to });
+    else if (openDay && m < mins(from)) msg = fill(box.dataset.lToday, { from: from });
+    else {
+      var n = 1;
+      while (n < 7 && open.indexOf((day + n) % 7) < 0) n++;
+      msg = n === 1 ? fill(box.dataset.lTomorrow, { from: from })
+                    : fill(box.dataset.lDay, { from: from, day: names[(day + n) % 7] });
+    }
+    if (now.textContent !== msg) now.textContent = msg;
+    now.classList.toggle("is-open", isOpen);
+    clock.textContent = fill(box.dataset.lClock, { time: p.hour + ":" + p.minute });
+    rows.forEach(function (r) { r.classList.toggle("is-today", r.dataset.days.split(",").map(Number).indexOf(day) > -1); });
+    box.hidden = false;
+  }
+  tick();
+  setInterval(tick, 30000);
 })();

@@ -1,0 +1,345 @@
+[
+  {
+    "key": "oranges",
+    "path": "/assets/img/qoot-oranges-sorting-line-930.webp",
+    "type": "image/webp",
+    "width": 930,
+    "height": 860,
+    "altAr": "برتقال على خط الفرز قبل تعبئته",
+    "altEn": "Oranges moving along a sorting line before packing",
+    "fileName": "qoot-oranges-sorting-line.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-oranges-sorting-line-640.avif 640w, /assets/img/qoot-oranges-sorting-line-930.avif 930w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-oranges-sorting-line-640.webp 640w, /assets/img/qoot-oranges-sorting-line-930.webp 930w"
+      }
+    ]
+  },
+  {
+    "key": "tomatoes",
+    "path": "/assets/img/qoot-tomatoes-crate-1280.webp",
+    "type": "image/webp",
+    "width": 1374,
+    "height": 520,
+    "altAr": "صندوق طماطم طازجة من صناديق قوت",
+    "altEn": "A crate of fresh vine tomatoes in a Qoot box",
+    "fileName": "qoot-tomatoes-crate.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-tomatoes-crate-640.avif 640w, /assets/img/qoot-tomatoes-crate-1280.avif 1280w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-tomatoes-crate-640.webp 640w, /assets/img/qoot-tomatoes-crate-1280.webp 1280w"
+      }
+    ]
+  },
+  {
+    "key": "bread",
+    "path": "/assets/img/qoot-bread-wrapping-paper-960.webp",
+    "type": "image/webp",
+    "width": 6074,
+    "height": 4049,
+    "altAr": "خبز طازج ملفوف في ورق تغليف قوت المزيّن برسوم الطعام",
+    "altEn": "Fresh bread wrapped in Qoot paper printed with food drawings",
+    "fileName": "qoot-bread-wrapping-paper.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-bread-wrapping-paper-640.avif 640w, /assets/img/qoot-bread-wrapping-paper-960.avif 960w, /assets/img/qoot-bread-wrapping-paper-1600.avif 1600w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-bread-wrapping-paper-640.webp 640w, /assets/img/qoot-bread-wrapping-paper-960.webp 960w, /assets/img/qoot-bread-wrapping-paper-1600.webp 1600w"
+      }
+    ]
+  },
+  {
+    "key": "meals",
+    "path": "/assets/img/qoot-meal-bowls-960.webp",
+    "type": "image/webp",
+    "width": 5817,
+    "height": 3878,
+    "altAr": "وجبتان مطبوختان في أوعية قوت المغلقة",
+    "altEn": "Two cooked meals in sealed Qoot bowls",
+    "fileName": "qoot-meal-bowls.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-meal-bowls-640.avif 640w, /assets/img/qoot-meal-bowls-960.avif 960w, /assets/img/qoot-meal-bowls-1600.avif 1600w, /assets/img/qoot-meal-bowls-2400.avif 2400w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-meal-bowls-640.webp 640w, /assets/img/qoot-meal-bowls-960.webp 960w, /assets/img/qoot-meal-bowls-1600.webp 1600w, /assets/img/qoot-meal-bowls-2400.webp 2400w"
+      }
+    ]
+  },
+  {
+    "key": "produce",
+    "path": "/assets/img/qoot-produce-packing-960.webp",
+    "type": "image/webp",
+    "width": 2903,
+    "height": 1463,
+    "altAr": "عامل يعبّئ الخضار والفاكهة في صناديق قوت داخل المستودع",
+    "altEn": "A worker in gloves packing fruit and vegetables into Qoot boxes in the warehouse",
+    "fileName": "qoot-produce-packing.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-produce-packing-640.avif 640w, /assets/img/qoot-produce-packing-960.avif 960w, /assets/img/qoot-produce-packing-1600.avif 1600w, /assets/img/qoot-produce-packing-2400.avif 2400w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-produce-packing-640.webp 640w, /assets/img/qoot-produce-packing-960.webp 960w, /assets/img/qoot-produce-packing-1600.webp 1600w, /assets/img/qoot-produce-packing-2400.webp 2400w"
+      }
+    ]
+  },
+  {
+    "key": "warehouse",
+    "path": "/assets/img/qoot-warehouse-stock-960.webp",
+    "type": "image/webp",
+    "width": 1900,
+    "height": 1500,
+    "altAr": "مستودع مليء بالمعلبات والمواد الغذائية على منصات",
+    "altEn": "A warehouse stacked with pallets of tinned and dry food",
+    "fileName": "qoot-warehouse-stock.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-warehouse-stock-640.avif 640w, /assets/img/qoot-warehouse-stock-960.avif 960w, /assets/img/qoot-warehouse-stock-1600.avif 1600w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-warehouse-stock-640.webp 640w, /assets/img/qoot-warehouse-stock-960.webp 960w, /assets/img/qoot-warehouse-stock-1600.webp 1600w"
+      }
+    ]
+  },
+  {
+    "key": "truck",
+    "path": "/assets/img/qoot-delivery-truck-960.webp",
+    "type": "image/webp",
+    "width": 1654,
+    "height": 976,
+    "altAr": "شاحنة توصيل قوت الخضراء برسوم الطعام على صندوقها",
+    "altEn": "The green Qoot delivery truck with food drawings on its side",
+    "fileName": "qoot-delivery-truck.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-delivery-truck-640.avif 640w, /assets/img/qoot-delivery-truck-960.avif 960w, /assets/img/qoot-delivery-truck-1654.avif 1654w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-delivery-truck-640.webp 640w, /assets/img/qoot-delivery-truck-960.webp 960w, /assets/img/qoot-delivery-truck-1654.webp 1654w"
+      }
+    ]
+  },
+  {
+    "key": "bags",
+    "path": "/assets/img/qoot-paper-bags-960.webp",
+    "type": "image/webp",
+    "width": 1654,
+    "height": 1024,
+    "altAr": "أكياس ورقية بشعار قوت",
+    "altEn": "Paper bags printed with the Qoot logo",
+    "fileName": "qoot-paper-bags.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-paper-bags-640.avif 640w, /assets/img/qoot-paper-bags-960.avif 960w, /assets/img/qoot-paper-bags-1654.avif 1654w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-paper-bags-640.webp 640w, /assets/img/qoot-paper-bags-960.webp 960w, /assets/img/qoot-paper-bags-1654.webp 1654w"
+      }
+    ]
+  },
+  {
+    "key": "truck-tall",
+    "path": "/assets/img/qoot-delivery-truck-tile-960.webp",
+    "type": "image/webp",
+    "width": 1654,
+    "height": 2067,
+    "altAr": "شاحنة توصيل قوت الخضراء في إطار طولي",
+    "altEn": "The green Qoot delivery truck, tall crop",
+    "fileName": "qoot-delivery-truck-tile.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-delivery-truck-tile-640.avif 640w, /assets/img/qoot-delivery-truck-tile-960.avif 960w, /assets/img/qoot-delivery-truck-tile-1654.avif 1654w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-delivery-truck-tile-640.webp 640w, /assets/img/qoot-delivery-truck-tile-960.webp 960w, /assets/img/qoot-delivery-truck-tile-1654.webp 1654w"
+      }
+    ]
+  },
+  {
+    "key": "bread-tall",
+    "path": "/assets/img/qoot-bread-wrapping-paper-tall-720.webp",
+    "type": "image/webp",
+    "width": 1080,
+    "height": 1440,
+    "altAr": "خبز طازج في ورق تغليف قوت، إطار طولي",
+    "altEn": "Fresh bread in Qoot wrapping paper, tall crop",
+    "fileName": "qoot-bread-wrapping-paper-tall.webp",
+    "sources": [
+      {
+        "type": "image/avif",
+        "srcset": "/assets/img/qoot-bread-wrapping-paper-tall-480.avif 480w, /assets/img/qoot-bread-wrapping-paper-tall-720.avif 720w, /assets/img/qoot-bread-wrapping-paper-tall-1080.avif 1080w"
+      },
+      {
+        "type": "image/webp",
+        "srcset": "/assets/img/qoot-bread-wrapping-paper-tall-480.webp 480w, /assets/img/qoot-bread-wrapping-paper-tall-720.webp 720w, /assets/img/qoot-bread-wrapping-paper-tall-1080.webp 1080w"
+      }
+    ]
+  },
+  {
+    "key": "og",
+    "path": "/assets/img/qoot-og-image.jpg",
+    "type": "image/jpeg",
+    "width": 1200,
+    "height": 630,
+    "altAr": "شعار قوت المدينة ونافذة على شكل حرف Q تطل على مستودع للمواد الغذائية",
+    "altEn": "The Qoot Al Madinah logo beside a Q-shaped window onto a food warehouse",
+    "fileName": "qoot-og-image.jpg",
+    "sources": []
+  },
+  {
+    "key": "draw-tomato",
+    "path": "/assets/logo/qoot-draw-tomato.svg",
+    "type": "image/svg+xml",
+    "width": 820,
+    "height": 900,
+    "altAr": "رسم طماطم",
+    "altEn": "Tomato drawing",
+    "fileName": "qoot-draw-tomato.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-chicken",
+    "path": "/assets/logo/qoot-draw-chicken.svg",
+    "type": "image/svg+xml",
+    "width": 1118,
+    "height": 1040,
+    "altAr": "رسم دجاجة",
+    "altEn": "Chicken drawing",
+    "fileName": "qoot-draw-chicken.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-fish",
+    "path": "/assets/logo/qoot-draw-fish.svg",
+    "type": "image/svg+xml",
+    "width": 878,
+    "height": 953,
+    "altAr": "رسم سمكة",
+    "altEn": "Fish drawing",
+    "fileName": "qoot-draw-fish.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-sack",
+    "path": "/assets/logo/qoot-draw-sack.svg",
+    "type": "image/svg+xml",
+    "width": 800,
+    "height": 960,
+    "altAr": "رسم كيس دقيق",
+    "altEn": "Flour sack drawing",
+    "fileName": "qoot-draw-sack.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-milk",
+    "path": "/assets/logo/qoot-draw-milk.svg",
+    "type": "image/svg+xml",
+    "width": 830,
+    "height": 1030,
+    "altAr": "رسم زجاجة حليب",
+    "altEn": "Milk bottle drawing",
+    "fileName": "qoot-draw-milk.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-croissant",
+    "path": "/assets/logo/qoot-draw-croissant.svg",
+    "type": "image/svg+xml",
+    "width": 1010,
+    "height": 1149,
+    "altAr": "رسم كرواسون",
+    "altEn": "Croissant drawing",
+    "fileName": "qoot-draw-croissant.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-water",
+    "path": "/assets/logo/qoot-draw-water.svg",
+    "type": "image/svg+xml",
+    "width": 740,
+    "height": 1030,
+    "altAr": "رسم زجاجة ماء",
+    "altEn": "Water bottle drawing",
+    "fileName": "qoot-draw-water.svg",
+    "sources": []
+  },
+  {
+    "key": "draw-bag",
+    "path": "/assets/logo/qoot-draw-bag.svg",
+    "type": "image/svg+xml",
+    "width": 800,
+    "height": 940,
+    "altAr": "رسم كيس تسوق",
+    "altEn": "Shopping bag drawing",
+    "fileName": "qoot-draw-bag.svg",
+    "sources": []
+  },
+  {
+    "key": "wordmark-ar-green",
+    "path": "/assets/logo/qoot-wordmark-ar-green.svg",
+    "type": "image/svg+xml",
+    "width": 776,
+    "height": 409,
+    "altAr": "قوت المدينة",
+    "altEn": "Qoot Al Madinah (Arabic wordmark)",
+    "fileName": "qoot-wordmark-ar-green.svg",
+    "sources": []
+  },
+  {
+    "key": "wordmark-en-green",
+    "path": "/assets/logo/qoot-wordmark-en-green.svg",
+    "type": "image/svg+xml",
+    "width": 781,
+    "height": 406,
+    "altAr": "قوت المدينة (الشعار الإنجليزي)",
+    "altEn": "Qoot Al Madinah",
+    "fileName": "qoot-wordmark-en-green.svg",
+    "sources": []
+  },
+  {
+    "key": "wordmark-ar-cream",
+    "path": "/assets/logo/qoot-wordmark-ar-cream.svg",
+    "type": "image/svg+xml",
+    "width": 776,
+    "height": 409,
+    "altAr": "قوت المدينة",
+    "altEn": "Qoot Al Madinah (Arabic wordmark)",
+    "fileName": "qoot-wordmark-ar-cream.svg",
+    "sources": []
+  },
+  {
+    "key": "wordmark-en-cream",
+    "path": "/assets/logo/qoot-wordmark-en-cream.svg",
+    "type": "image/svg+xml",
+    "width": 781,
+    "height": 406,
+    "altAr": "قوت المدينة (الشعار الإنجليزي)",
+    "altEn": "Qoot Al Madinah",
+    "fileName": "qoot-wordmark-en-cream.svg",
+    "sources": []
+  }
+]

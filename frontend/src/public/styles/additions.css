@@ -1,0 +1,269 @@
+/* Additions for the dynamic site: the Latest news section, the news pages, and the states a
+   page loaded from the API needs (loading, error, preview). Same tokens, same five type sizes,
+   same Q window as the original stylesheet. */
+
+[hidden]{display:none!important}
+.brand-name{display:block;font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:52px}
+.hp{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* Page states: the first paint while the content loads, and the page when the API is unreachable */
+.page-state{min-height:100svh;display:grid;place-content:center;justify-items:center;gap:18px;padding:var(--m);text-align:center;font-size:var(--fs-small)}
+.page-state-q{width:72px;aspect-ratio:290/355;background:var(--green);-webkit-mask:var(--qmask-url) center/100% 100% no-repeat;mask:var(--qmask-url) center/100% 100% no-repeat}
+.page-state-title{font-size:var(--fs-statement);font-weight:700;line-height:1.35;max-width:24ch}
+.page-state .btn{margin-top:8px}
+:root{--qmask-url:url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20290%20355%22%3E%3Cg%20transform=%22translate%280.000000,355.000000%29%20scale%280.100000,-0.100000%29%22%3E%3Cpath%20d=%22M1115%203475%20c-476%20-88%20-845%20-405%20-997%20-858%20-56%20-169%20-57%20-186%20-58%20-873%200%20-683%201%20-703%2056%20-871%20112%20-345%20382%20-638%20717%20-780%2079%20-33%2079%20-33%20492%20-33%20394%200%20416%201%20461%2020%2026%2012%2053%2019%2060%2016%207%20-3%2017%201%2023%208%2015%2018%20-14%2042%20-59%2049%20-347%2056%20-657%20238%20-828%20487%20-25%2036%20-46%2055%20-60%2056%20-46%203%20-173%20142%20-227%20249%20-74%20147%20-75%20158%20-75%20800%200%20536%201%20577%2020%20649%2059%20233%20242%20426%20475%20503%20102%2033%20281%2038%20385%2010%20204%20-55%20376%20-200%20467%20-395%2063%20-135%2064%20-150%2061%20-801%20-3%20-586%20-3%20-586%20-32%20-669%20-31%20-90%20-122%20-237%20-146%20-237%20-8%200%20-21%20-4%20-28%20-9%20-21%20-13%202%20-32%2087%20-73%2042%20-20%20155%20-84%20251%20-141%20133%20-80%20178%20-102%20190%20-94%208%205%2014%2017%2012%2025%20-1%208%2011%2035%2027%2059%2086%20128%20157%20307%20189%20472%2026%20140%2026%201268%20-1%201401%20-109%20538%20-513%20938%20-1044%201030%20-104%2018%20-321%2018%20-418%200z%22/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-reduced-motion:no-preference){
+  .page-state[role="status"] .page-state-q{animation:q-breathe 1.6s var(--ease-in-out) infinite alternate}
+}
+@keyframes q-breathe{from{transform:scale(.92);opacity:.55}to{transform:none;opacity:1}}
+
+/* Preview of unpublished drafts, for dashboard users: a slip that floats over the page */
+.preview-bar{position:fixed;z-index:60;bottom:16px;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 2*var(--m));display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px;padding:10px 20px;border-radius:var(--radius);background:var(--leaf);color:var(--green);font-size:var(--fs-small);font-weight:700;box-shadow:0 18px 40px -20px rgba(0,40,40,.6)} /* taste-skill-ignore: a floating bar over the page */
+.preview-bar p{font-weight:400}
+.preview-bar a{padding:6px 0}
+
+/* ---------------------------------------------------------------------------
+   Contact us: who to reach and how, on the stub; the form on the slip */
+.contact .coupon-stub{gap:24px}
+.contact .coupon-stub h2{font-size:var(--fs-h2);font-weight:700;line-height:1.02;letter-spacing:-.03em}
+html[lang="ar"] .contact .coupon-stub h2{line-height:1.3;letter-spacing:0}
+.contact .coupon-stub .sub{font-size:var(--fs-statement);line-height:1.4;max-width:24ch}
+html[lang="ar"] .contact .coupon-stub .sub{line-height:1.6}
+.reach-label{font-size:var(--fs-small);font-weight:700;color:var(--cream-soft)}
+.reach-list{display:grid;gap:4px;margin-top:10px}
+.reach{display:grid;grid-template-columns:minmax(84px,auto) minmax(0,1fr);align-items:baseline;gap:16px;padding:10px 12px;margin-inline:-12px;border-radius:var(--radius);text-decoration:none;transition:background-color var(--t-hover) ease}
+@media (hover:hover) and (pointer:fine){.reach:hover{background:var(--green-2)}}
+.reach-k{font-size:var(--fs-small);color:var(--cream-soft)}
+.reach-v{font-size:var(--fs-body);font-weight:700;color:var(--leaf);overflow-wrap:anywhere}
+html[dir="rtl"] .reach-v[dir="ltr"]{text-align:right}
+.reach:hover .reach-v{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.2em}
+.contact .stub-foot{justify-content:flex-start}
+.fields .opt{font-weight:400;color:var(--cream-soft);margin-inline-start:6px}
+.fields label .lbl{display:flex;align-items:baseline;gap:4px}
+/* Form messages: errors stand out from the leaf-green confirmations */
+.contact-status[data-kind="error"]{color:var(--t-coral);font-weight:700}
+.contact-status[data-kind="info"]{color:var(--cream-soft)}
+.contact-status[data-kind="ok"]{display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:var(--radius);background:var(--leaf);color:var(--green);font-weight:700}
+.fields [aria-invalid="true"]{box-shadow:0 0 0 3px var(--t-coral)} /* taste-skill-ignore: the error ring of a form field */
+.coupon-form[aria-busy="true"] .btn{opacity:.7;cursor:progress}
+
+/* ---------------------------------------------------------------------------
+   Latest news: one card per story, its picture, headline, category and date, and its words. A
+   long story is folded to a few lines and opens in place with "Read more", so nobody has to open
+   stories one by one. Cards sit a tone step down from the cream, never outlined or shadowed. A
+   category keeps its tone everywhere. */
+.news-home{padding:var(--section) var(--m) 0}
+.news-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px 40px;flex-wrap:wrap}
+.news-head-text{display:grid;gap:18px;max-width:780px}
+.news-intro{font-size:var(--fs-statement);line-height:1.4;max-width:40ch}
+html[lang="ar"] .news-intro{line-height:1.65}
+.news-all{flex:none}
+html[dir="ltr"] .news-all .arr{transform:none}
+.news-body{margin-top:clamp(36px,4.4vw,64px)}
+
+[data-tone="leaf"]{--tone:var(--leaf)}
+[data-tone="ochre"]{--tone:var(--t-ochre)}
+[data-tone="sea"]{--tone:var(--t-sea)}
+[data-tone="wheat"]{--tone:var(--t-wheat)}
+[data-tone="coral"]{--tone:var(--t-coral)}
+[data-tone="aqua"]{--tone:var(--t-aqua)}
+
+/* the category (a dot in its tone) and when */
+.news-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px;font-size:var(--fs-small);line-height:1.4}
+.news-cat{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+.news-cat::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--dot,color-mix(in srgb,var(--tone) 82%,var(--green) 18%))}
+
+/* the head of an article: a field of the story's colour */
+.article-hero{--dot:var(--green);display:grid;grid-template-columns:minmax(0,1fr);border-radius:var(--radius);overflow:hidden;background:var(--tone);color:var(--green)}
+.story-text{display:flex;flex-direction:column;justify-content:flex-end;gap:32px;padding:clamp(24px,3.2vw,52px);min-width:0}
+.story-words{display:grid;justify-items:start;gap:clamp(14px,1.4vw,20px)}
+.story-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:8px}
+.story-photo{position:relative;overflow:hidden;margin:0;background:var(--cream-2)}
+.story-photo>picture,.story-photo>picture>img{position:absolute;inset:0;width:100%;height:100%}
+.story-photo>picture>img{object-fit:cover}
+.story-photo.is-drawn{background:color-mix(in srgb,var(--tone) 78%,var(--green) 22%)}
+.nc-photo.is-drawn{background:var(--tone)}
+.story-drawing{position:absolute;inset:0;display:grid;place-items:center}
+.story-drawing img{width:auto;height:54%;max-width:70%;object-fit:contain}
+
+/* a story only available in the other language keeps its own direction, but lines up with the page */
+html[dir="ltr"] :is(.story-words,.nc-body) [dir="auto"]{text-align:left}
+html[dir="rtl"] :is(.story-words,.nc-body) [dir="auto"]{text-align:right}
+
+/* The cards: three across on a wide screen, two on a tablet, one on a phone */
+.nc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.8vw,28px)}
+.nc-grid[data-n="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.nc-grid:has(.nc.is-open){align-items:start}
+.nc{--lines:4;display:flex;flex-direction:column;min-width:0;border-radius:var(--radius);overflow:hidden;background:var(--cream-2);color:var(--green)}
+.nc-photo{position:relative;flex:none;aspect-ratio:3/2;overflow:hidden;background:#E9D9BE}
+.nc-photo>picture,.nc-photo>picture>img{width:100%;height:100%}
+.nc-photo>picture>img{object-fit:cover;transition:transform .9s var(--ease-out)}
+.nc-body{display:grid;align-content:start;justify-items:start;gap:12px;padding:clamp(18px,1.7vw,26px) clamp(18px,1.7vw,26px) clamp(20px,1.9vw,28px);min-width:0}
+html[lang] .nc-title{font-size:clamp(20px,1.55vw,24px);font-weight:700;line-height:1.25;letter-spacing:-.01em;text-wrap:balance}
+html[lang="ar"] .nc-title{line-height:1.55;letter-spacing:0}
+.nc-text{justify-self:stretch;margin-top:2px;font-size:16px;line-height:1.65;overflow-wrap:anywhere}
+html[lang="ar"] .nc-text,.nc-text:lang(ar){line-height:1.85}
+.nc-text>p+p{margin-top:.75em}
+.nc-text a{font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.18em}
+.nc-text a.u::after{display:none}
+/* folded: a few lines, ending in an ellipsis */
+.nc:not(.is-open) .nc-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:var(--lines);line-clamp:var(--lines);overflow:hidden}
+.nc.is-moving .nc-text{overflow:hidden}
+.nc-more{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px 0 18px;border:0;border-radius:999px;background:var(--cream);color:var(--green);font-size:var(--fs-small);font-weight:700;cursor:pointer;transition:background-color var(--t-hover) ease,transform var(--t-press) var(--ease-out)}
+.nc-more svg{width:16px;height:16px;flex:none;transition:transform var(--t-ui) var(--ease-out)}
+.nc.is-open .nc-more svg{transform:rotate(180deg)}
+.nc-more:active{transform:scale(.97)}
+.nc-more:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){
+  .nc-more:hover{background:var(--leaf)}
+  .nc:hover .nc-photo>picture>img{transform:scale(1.03)}
+}
+
+/* one story: the card laid wide, its picture beside its words */
+.nc-grid[data-n="1"]{grid-template-columns:minmax(0,1fr)}
+.nc-grid[data-n="1"] :is(.nc,.sk-card){display:grid;grid-template-columns:minmax(0,11fr) minmax(0,10fr)}
+.nc-grid[data-n="1"] .nc{--lines:8}
+.nc-grid[data-n="1"] :is(.nc-photo,.sk-photo){aspect-ratio:auto;min-height:clamp(320px,32vw,460px)}
+.nc-grid[data-n="1"] .nc-photo>picture{position:absolute;inset:0}
+.nc-grid[data-n="1"] .nc-body{align-content:center;gap:16px;padding:clamp(24px,3.2vw,52px)}
+html[lang] .nc-grid[data-n="1"] .nc-title{font-size:clamp(26px,2.4vw,36px);line-height:1.15;letter-spacing:-.02em}
+html[lang="ar"] .nc-grid[data-n="1"] .nc-title{line-height:1.45;letter-spacing:0}
+.nc-grid[data-n="1"] .nc-text{font-size:var(--fs-body)}
+
+/* Cards come in as soon as the news arrives, one after another; nothing waits for the scroll. */
+@media (prefers-reduced-motion:no-preference){
+  .nc{animation:nc-in .5s var(--ease-out) both;animation-delay:calc(var(--i,0)*70ms)}
+}
+@keyframes nc-in{from{opacity:0;transform:translateY(18px)}}
+
+/* The article page's head and body arrive as they come into view (news-ui.ts → arrive). */
+@media (prefers-reduced-motion:no-preference){
+  [data-arrive] [data-a],.article-body[data-arrive]>*{transition:opacity .5s var(--ease-out),transform .6s var(--ease-expo);transition-delay:calc(var(--i,0)*60ms + 40ms)}
+  [data-arrive="wait"] [data-a],.article-body[data-arrive="wait"]>*{opacity:0;transform:translateY(20px)}
+  .article-body>:nth-child(2){--i:1}.article-body>:nth-child(3){--i:2}.article-body>:nth-child(4){--i:3}.article-body>:nth-child(n+5){--i:4}
+  [data-arrive] [data-a="photo"]{transition-delay:0ms;transition-duration:.8s}
+  [data-arrive="wait"] [data-a="photo"]{transform:none}
+}
+
+/* Loading: the same grid, card-shaped, in the cream one step down */
+.sk{display:block;background:var(--cream-soft);border-radius:6px}
+.sk-card{display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;background:var(--cream-2)}
+.sk-card .sk-photo{aspect-ratio:3/2;border-radius:0;background:#E9D9BE}
+.sk-lines{display:grid;align-content:start;gap:12px;padding:clamp(18px,1.7vw,26px)}
+.sk-line{height:14px}
+.sk-line.big{height:22px;width:86%}
+.sk-line.short{width:38%;height:12px;margin-bottom:6px}
+.sk-line.half{width:62%}
+@media (prefers-reduced-motion:no-preference){.sk{animation:sk-pulse 1.1s ease-in-out infinite alternate}}
+@keyframes sk-pulse{to{opacity:.45}}
+
+/* Nothing yet, or the news could not be loaded: a field with one of the drawings */
+.news-state{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,48px);padding:clamp(28px,4vw,56px);border-radius:var(--radius);background:var(--cream-2)}
+.news-state img{width:clamp(72px,8vw,120px);height:auto}
+.news-state-text{display:grid;justify-items:start;gap:18px}
+.state{font-size:var(--fs-statement);line-height:1.4;max-width:36ch}
+html[lang="ar"] .state{line-height:1.6}
+
+/* ---------------------------------------------------------------------------
+   The news pages: /news/ and one article */
+.news-main{min-height:70svh}
+.news-main>.page-state{min-height:70svh}
+.news-page{padding:clamp(128px,12vw,184px) var(--m) var(--section)}
+.news-page-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end}
+.news-page-head h1,.article-missing h1{font-size:clamp(44px,6vw,104px);font-weight:700;line-height:.98;letter-spacing:-.035em}
+html[lang="ar"] .news-page-head h1,html[lang="ar"] .article-missing h1{line-height:1.25;letter-spacing:0}
+.news-page-head h1{grid-column:1/8}
+.news-page-head .news-intro{grid-column:8/13}
+.news-filter{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(32px,4vw,56px)}
+.chip{min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--cream-2);color:var(--green);font-size:var(--fs-small);font-weight:700;cursor:pointer;transition:background-color var(--t-hover) ease,color var(--t-hover) ease}
+.chip[aria-pressed="true"]{background:var(--green);color:var(--cream)}
+@media (hover:hover) and (pointer:fine){.chip:not([aria-pressed="true"]):hover{background:var(--leaf)}}
+.news-index{margin-top:clamp(32px,4vw,56px)}
+.news-more{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:clamp(32px,4vw,56px)}
+.news-more:has(.btn[hidden]) .news-count:empty{display:none}
+.news-count{font-size:var(--fs-small)}
+.news-more .btn[disabled]{opacity:.7;cursor:progress}
+
+.article{padding:clamp(112px,10vw,152px) var(--m) clamp(64px,7vw,104px)}
+.article-top{margin-bottom:clamp(18px,2vw,28px)}
+html[dir="ltr"] .article .back .arr{transform:scaleX(-1)}
+html[dir="rtl"] .article .back .arr{transform:none}
+/* An article opens on its colour like a cover: the category and date, the headline at display size
+   across the field, the summary, then the picture running to the field's edges. */
+.article-hero{grid-template-columns:minmax(0,1fr);min-height:0}
+.article-hero .story-text{gap:clamp(28px,4vw,64px);padding-bottom:clamp(28px,3.4vw,56px)}
+.article-hero .story-words{gap:clamp(16px,1.8vw,26px)}
+html[lang] .article-hero .story-title{font-size:clamp(34px,4.6vw,76px);font-weight:700;line-height:1.04;letter-spacing:-.035em;max-width:24ch;text-wrap:balance}
+html[lang="ar"] .article-hero .story-title{line-height:1.3;letter-spacing:0}
+.article-hero .story-photo{aspect-ratio:21/9;min-height:0}
+.article-lede{font-size:clamp(18px,1.6vw,24px);line-height:1.5;max-width:46ch}
+html[lang="ar"] .article-lede{line-height:1.7}
+.article-note,.article-body,.article-foot{max-width:720px;margin-inline:auto}
+.article-note{display:block;width:fit-content;margin-top:clamp(32px,4vw,48px);padding:10px 16px;border-radius:var(--radius);background:var(--cream-2);font-size:var(--fs-small)}
+.article-body{margin-top:clamp(48px,6vw,88px);font-size:19px;line-height:1.75}
+html[lang="ar"] .article-body,.article-body[lang="ar"]{line-height:1.9}
+.article-body[dir="rtl"]{text-align:right}
+.article-body>*+*{margin-top:1.15em}
+.article-body>p:first-child{font-size:clamp(20px,1.6vw,23px);line-height:1.6}
+.article-body h2{margin-top:1.8em;font-size:clamp(26px,2.4vw,34px);line-height:1.25;letter-spacing:-.01em}
+.article-body h3{margin-top:1.6em;font-size:22px;line-height:1.35}
+html[lang] .article-body h2,html[lang] .article-body h3{font-weight:700}
+html[lang="ar"] .article-body h2,.article-body[lang="ar"] h2{line-height:1.5;letter-spacing:0}
+.article-body ul,.article-body ol{padding-inline-start:1.3em}
+.article-body ul{list-style:disc}
+.article-body ol{list-style:decimal}
+.article-body li+li{margin-top:.4em}
+.article-body li::marker{color:var(--green);font-weight:700}
+.article-body a{font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.18em}
+.article-body a.u::after{display:none}
+.article-body blockquote{margin-block:1.6em;margin-inline:0;padding:clamp(22px,2.6vw,36px);border-radius:var(--radius);background:var(--green);color:var(--cream)}
+.article-body blockquote p{font-size:var(--fs-statement);line-height:1.45}
+.article-body cite{display:block;margin-top:12px;font-size:var(--fs-small);font-style:normal;font-weight:700;color:var(--leaf)}
+.article-image{margin-block:1.8em}
+.article-image img{width:100%;border-radius:var(--radius)}
+.article-image figcaption{margin-top:10px;font-size:var(--fs-small)}
+.article-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:clamp(48px,6vw,80px)}
+.btn-quiet{background:var(--cream-2);color:var(--green)}
+.article-more{padding:clamp(56px,6vw,96px) var(--m) var(--section);background:var(--cream-2)}
+.article-more h2{font-size:var(--fs-h2)}
+.article-more .nc-grid{margin-top:clamp(24px,3vw,40px)}
+.article-more .nc{background:var(--cream)}
+.article-more .nc-more{background:var(--cream-2)}
+.article-missing{padding:clamp(140px,14vw,200px) var(--m) var(--section);display:grid;justify-items:start;gap:24px}
+.article-missing p{font-size:var(--fs-statement);max-width:36ch}
+
+/* Tablet: two cards across; an odd last card takes the whole row, its picture beside its words */
+@media (max-width:1023px){
+  .news-page-head h1,.news-page-head .news-intro{grid-column:1/-1}
+  .news-page-head .news-intro{margin-top:16px}
+  .nc-grid,.nc-grid[data-n="3"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nc-grid[data-n="3"]>:is(.nc,.sk-card):last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .nc-grid[data-n="3"]>:is(.nc,.sk-card):last-child:nth-child(odd) :is(.nc-photo,.sk-photo){aspect-ratio:auto;min-height:100%}
+  .nc-grid[data-n="3"]>.nc:last-child:nth-child(odd) .nc-photo>picture{position:absolute;inset:0}
+  .nc-grid[data-n="1"] .nc{--lines:6}
+}
+
+/* Phone: one card under another, the picture on top */
+@media (max-width:639px){
+  .news-head{align-items:flex-start}
+  .news-body{margin-top:32px}
+  .nc-grid,.nc-grid[data-n]{grid-template-columns:minmax(0,1fr);gap:16px}
+  .nc-grid[data-n] :is(.nc,.sk-card),.nc-grid[data-n="3"]>:is(.nc,.sk-card):last-child:nth-child(odd){display:flex;flex-direction:column}
+  .nc-grid[data-n] :is(.nc-photo,.sk-photo),.nc-grid[data-n="3"]>:is(.nc,.sk-card):last-child:nth-child(odd) :is(.nc-photo,.sk-photo){aspect-ratio:16/10;min-height:0}
+  .nc-grid[data-n] .nc-photo>picture{position:static}
+  .nc,.nc-grid[data-n="1"] .nc{--lines:5}
+  .nc-body,.nc-grid[data-n="1"] .nc-body{padding:18px 18px 20px;gap:10px}
+  html[lang] .nc-title,html[lang] .nc-grid[data-n="1"] .nc-title{font-size:20px;line-height:1.3;letter-spacing:-.01em}
+  html[lang="ar"] .nc-title,html[lang="ar"] .nc-grid[data-n="1"] .nc-title{line-height:1.55;letter-spacing:0}
+  .nc-grid[data-n="1"] .nc-text{font-size:16px}
+  .news-state{grid-template-columns:1fr;justify-items:start}
+  .news-page{padding-top:112px}
+  .article{padding-top:96px}
+  .article-hero .story-photo{aspect-ratio:4/3}
+  .story-text{padding:20px 20px 24px;gap:22px}
+  html[lang] .article-hero .story-title{font-size:clamp(28px,8vw,34px)}
+  .article-body{font-size:18px}
+  .article-body>p:first-child{font-size:19px}
+  .preview-bar{bottom:10px;padding:10px 14px}
+}
+@media (prefers-reduced-motion:reduce){.nc-photo img,.nc-more,.nc-more svg,.chip{transition:none}.nc-more:active{transform:none}}

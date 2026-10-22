@@ -1,0 +1,26 @@
+# build output
+bin/
+obj/
+node_modules/
+frontend/dist/
+backend/src/Qoot.Api/wwwroot/
+out/
+publish/
+
+# runtime data: uploads, cookie keys, logs (keep on persistent storage, never in git)
+backend/src/Qoot.Api/App_Data/
+*.log
+
+# local settings and secrets
+.env.local
+*.local
+appsettings.*.local.json
+.vs/
+.vscode/
+.idea/
+*.user
+
+# test output
+frontend/test-results/
+frontend/playwright-report/
+TestResults/

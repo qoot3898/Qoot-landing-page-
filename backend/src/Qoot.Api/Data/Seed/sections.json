@@ -1,0 +1,1143 @@
+{
+  "header": {
+    "links": [
+      {
+        "id": "nav001",
+        "hidden": false,
+        "label": {
+          "ar": "ما نوفّره",
+          "en": "What we supply"
+        },
+        "target": "#supplies"
+      },
+      {
+        "id": "nav002",
+        "hidden": false,
+        "label": {
+          "ar": "طريقة عملنا",
+          "en": "How we work"
+        },
+        "target": "#how-we-work"
+      },
+      {
+        "id": "nav003",
+        "hidden": false,
+        "label": {
+          "ar": "من نخدم",
+          "en": "Who we feed"
+        },
+        "target": "#who-we-feed"
+      },
+      {
+        "id": "nav005",
+        "hidden": false,
+        "label": {
+          "ar": "الأخبار",
+          "en": "News"
+        },
+        "target": "/news/"
+      },
+      {
+        "id": "nav004",
+        "hidden": false,
+        "label": {
+          "ar": "الأسئلة الشائعة",
+          "en": "FAQ"
+        },
+        "target": "#faq"
+      }
+    ],
+    "ctaLabel": {
+      "ar": "تواصل معنا",
+      "en": "Contact us"
+    },
+    "ctaTarget": "#contact",
+    "menuOpenLabel": {
+      "ar": "القائمة",
+      "en": "Menu"
+    },
+    "menuCloseLabel": {
+      "ar": "إغلاق",
+      "en": "Close"
+    },
+    "skipLabel": {
+      "ar": "انتقل إلى المحتوى",
+      "en": "Skip to content"
+    },
+    "logoAlt": {
+      "ar": "قوت المدينة — قوت للتعهدات والتموين، الصفحة الرئيسية",
+      "en": "Qoot Al Madinah, Qoot Catering & Supplies home"
+    }
+  },
+  "hero": {
+    "titleStart": {
+      "ar": "قوت",
+      "en": "Qoot catering"
+    },
+    "titleEnd": {
+      "ar": "للتعهدات والتموين",
+      "en": "& food supply"
+    },
+    "lede": {
+      "ar": "نورّد المواد الغذائية ونطبخ الوجبات للشركات ومخيمات مواقع العمل والمستشفيات والمدارس في كل ليبيا، من مقرّنا في بنغازي.",
+      "en": "We supply food and cook meals for companies, work-site camps, hospitals and schools across Libya, from our base in Benghazi."
+    },
+    "linkLabel": {
+      "ar": "تصفّح ما نوفّره",
+      "en": "See what we supply"
+    },
+    "linkTarget": "#supplies",
+    "slides": [
+      {
+        "id": "slide006",
+        "hidden": false,
+        "image": "$media:oranges",
+        "caption": {
+          "ar": "فاكهة على خط الفرز",
+          "en": "Fruit on the sorting line"
+        }
+      },
+      {
+        "id": "slide007",
+        "hidden": false,
+        "image": "$media:tomatoes",
+        "caption": {
+          "ar": "طماطم في صناديق قوت",
+          "en": "Tomatoes in Qoot crates"
+        }
+      },
+      {
+        "id": "slide008",
+        "hidden": false,
+        "image": "$media:bread",
+        "caption": {
+          "ar": "خبز يُخبز ويُغلّف في الصباح نفسه",
+          "en": "Bread, baked and wrapped the same morning"
+        }
+      },
+      {
+        "id": "slide009",
+        "hidden": false,
+        "image": "$media:meals",
+        "caption": {
+          "ar": "وجبات مغلقة في أوعية قوت",
+          "en": "Meals sealed in Qoot bowls"
+        }
+      }
+    ]
+  },
+  "supplies": {
+    "title": {
+      "ar": "ما نوفّره",
+      "en": "What we supply"
+    },
+    "intro": {
+      "ar": "مورّد واحد لمطبخك بالكامل: طازج ومبرّد ومجمّد وجاف، مع مواد التغليف لتقديمه.",
+      "en": "One supplier for the whole kitchen: fresh, chilled, frozen and dry goods, plus the packaging to serve them in."
+    },
+    "tiles": [
+      {
+        "id": "tile012",
+        "hidden": false,
+        "name": {
+          "ar": "الخضار والفاكهة",
+          "en": "Vegetables & fruit"
+        },
+        "tone": "veg",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل يوميًا",
+          "en": "Delivered daily"
+        },
+        "items": [
+          {
+            "id": "item010",
+            "hidden": false,
+            "text": {
+              "ar": "طماطم وبطاطا وبصل وفلفل وخضار ورقية",
+              "en": "Tomatoes, potatoes, onions, peppers, greens"
+            },
+            "detail": {
+              "ar": "صناديق مفروزة حسب الحجم",
+              "en": "Crates, sorted by size"
+            }
+          },
+          {
+            "id": "item011",
+            "hidden": false,
+            "text": {
+              "ar": "فاكهة الموسم",
+              "en": "Fruit in season"
+            },
+            "detail": {
+              "ar": "صناديق",
+              "en": "Crates"
+            }
+          }
+        ],
+        "short": {
+          "ar": "خضار يومية وفاكهة الموسم",
+          "en": "Daily greens and seasonal fruit"
+        },
+        "art": "$media:draw-tomato"
+      },
+      {
+        "id": "tile015",
+        "hidden": false,
+        "name": {
+          "ar": "الدواجن واللحوم",
+          "en": "Poultry & meat"
+        },
+        "tone": "poultry",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل يوميًا",
+          "en": "Delivered daily"
+        },
+        "items": [
+          {
+            "id": "item013",
+            "hidden": false,
+            "text": {
+              "ar": "دجاج كامل وصدور وأفخاذ",
+              "en": "Whole chickens, breasts and thighs"
+            },
+            "detail": {
+              "ar": "مجمّد أو مبرّد، بالكرتونة",
+              "en": "Frozen or chilled, by the carton"
+            }
+          },
+          {
+            "id": "item014",
+            "hidden": false,
+            "text": {
+              "ar": "لحم ضأن وبقر، بالعظم ومفروم",
+              "en": "Lamb and beef, bone-in and minced"
+            },
+            "detail": {
+              "ar": "مبرّد ومفرّغ من الهواء",
+              "en": "Chilled, vacuum-packed"
+            }
+          }
+        ],
+        "short": {
+          "ar": "دجاج، ضأن، بقر",
+          "en": "Chicken, lamb, beef"
+        },
+        "art": "$media:draw-chicken"
+      },
+      {
+        "id": "tile017",
+        "hidden": false,
+        "name": {
+          "ar": "الأسماك",
+          "en": "Fish"
+        },
+        "tone": "fish",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل مرتين أسبوعيًا",
+          "en": "Delivered twice a week"
+        },
+        "items": [
+          {
+            "id": "item016",
+            "hidden": false,
+            "text": {
+              "ar": "أسماك كاملة وفيليه",
+              "en": "Whole fish and fillets"
+            },
+            "detail": {
+              "ar": "مجمّدة، أو على الثلج للطلب اليومي",
+              "en": "Frozen, or on ice for same-day orders"
+            }
+          }
+        ],
+        "short": {
+          "ar": "كاملة وفيليه",
+          "en": "Whole and fillets"
+        },
+        "art": "$media:draw-fish"
+      },
+      {
+        "id": "tile020",
+        "hidden": false,
+        "name": {
+          "ar": "المواد الجافة والزيوت",
+          "en": "Dry goods & oils"
+        },
+        "tone": "dry",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل أسبوعيًا",
+          "en": "Delivered weekly"
+        },
+        "items": [
+          {
+            "id": "item018",
+            "hidden": false,
+            "text": {
+              "ar": "أرز ومكرونة ودقيق وسكر وبقوليات",
+              "en": "Rice, pasta, flour, sugar, pulses"
+            },
+            "detail": {
+              "ar": "أكياس من 5 إلى 50 كغ",
+              "en": "5 to 50 kg sacks"
+            }
+          },
+          {
+            "id": "item019",
+            "hidden": false,
+            "text": {
+              "ar": "زيت زيتون وزيت نباتي ومعجون طماطم ومعلبات",
+              "en": "Olive and vegetable oil, tomato paste, tins"
+            },
+            "detail": {
+              "ar": "علب وكراتين",
+              "en": "Tins and cartons"
+            }
+          }
+        ],
+        "short": {
+          "ar": "أرز، دقيق، زيوت",
+          "en": "Rice, flour, oils"
+        },
+        "art": "$media:draw-sack"
+      },
+      {
+        "id": "tile022",
+        "hidden": false,
+        "name": {
+          "ar": "الألبان والبيض",
+          "en": "Dairy & eggs"
+        },
+        "tone": "dairy",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل 3 مرات أسبوعيًا",
+          "en": "Delivered 3 times a week"
+        },
+        "items": [
+          {
+            "id": "item021",
+            "hidden": false,
+            "text": {
+              "ar": "حليب وأجبان ولبن وزبدة وبيض",
+              "en": "Milk, cheese, yoghurt, butter, eggs"
+            },
+            "detail": {
+              "ar": "مبرّد",
+              "en": "Chilled"
+            }
+          }
+        ],
+        "short": {
+          "ar": "حليب، أجبان، بيض",
+          "en": "Milk, cheese, eggs"
+        },
+        "art": "$media:draw-milk"
+      },
+      {
+        "id": "tile024",
+        "hidden": false,
+        "name": {
+          "ar": "المخبوزات",
+          "en": "Bakery"
+        },
+        "tone": "bakery",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل يوميًا",
+          "en": "Delivered daily"
+        },
+        "items": [
+          {
+            "id": "item023",
+            "hidden": false,
+            "text": {
+              "ar": "خبز ومعجنات",
+              "en": "Bread and pastries"
+            },
+            "detail": {
+              "ar": "مغلّفة، تُخبز في الصباح نفسه",
+              "en": "Wrapped, baked the same morning"
+            }
+          }
+        ],
+        "short": {
+          "ar": "خبز الصباح نفسه",
+          "en": "Baked that morning"
+        },
+        "art": "$media:draw-croissant"
+      },
+      {
+        "id": "tile026",
+        "hidden": false,
+        "name": {
+          "ar": "المياه والمشروبات",
+          "en": "Water & drinks"
+        },
+        "tone": "water",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل أسبوعيًا",
+          "en": "Delivered weekly"
+        },
+        "items": [
+          {
+            "id": "item025",
+            "hidden": false,
+            "text": {
+              "ar": "مياه معبأة وعصائر",
+              "en": "Bottled water and juices"
+            },
+            "detail": {
+              "ar": "عبوات مغلّفة",
+              "en": "Shrink-wrapped packs"
+            }
+          }
+        ],
+        "short": {
+          "ar": "مياه وعصائر",
+          "en": "Water and juices"
+        },
+        "art": "$media:draw-water"
+      },
+      {
+        "id": "tile029",
+        "hidden": false,
+        "name": {
+          "ar": "التغليف والتنظيف",
+          "en": "Packaging & cleaning"
+        },
+        "tone": "pack",
+        "size": "auto",
+        "when": {
+          "ar": "التوصيل أسبوعيًا",
+          "en": "Delivered weekly"
+        },
+        "items": [
+          {
+            "id": "item027",
+            "hidden": false,
+            "text": {
+              "ar": "علب وأطباق وأكياس وأدوات مائدة للوجبات الجاهزة",
+              "en": "Take-away boxes, bowls, bags, cutlery"
+            },
+            "detail": {
+              "ar": "بشعار قوت أو سادة",
+              "en": "Qoot-branded or plain"
+            }
+          },
+          {
+            "id": "item028",
+            "hidden": false,
+            "text": {
+              "ar": "مواد التنظيف والنظافة",
+              "en": "Cleaning and hygiene supplies"
+            },
+            "detail": {
+              "ar": "كراتين",
+              "en": "Cartons"
+            }
+          }
+        ],
+        "short": {
+          "ar": "علب وأكياس بشعار قوت، ومواد التنظيف",
+          "en": "Qoot-branded boxes and bags, cleaning supplies"
+        },
+        "art": "$media:draw-bag"
+      }
+    ],
+    "notePrefix": {
+      "ar": "لا تجد ما تحتاجه؟",
+      "en": "Need something that isn’t listed?"
+    },
+    "noteLinkLabel": {
+      "ar": "اذكره في رسالتك إلينا",
+      "en": "Mention it when you contact us"
+    },
+    "noteLinkTarget": "#contact",
+    "noteSuffix": {
+      "ar": "وسنخبرك إن كنا نستطيع توفيره.",
+      "en": "and we’ll tell you if we can supply it."
+    }
+  },
+  "how": {
+    "title": {
+      "ar": "طريقة عملنا",
+      "en": "How we work"
+    },
+    "intro": {
+      "ar": "من المورّد إلى بابك، نتولّى كل خطوة بأنفسنا.",
+      "en": "From the supplier to your door, we handle every step ourselves."
+    },
+    "steps": [
+      {
+        "id": "step030",
+        "hidden": false,
+        "title": {
+          "ar": "نورّد",
+          "en": "Source"
+        },
+        "text": {
+          "ar": "من مزارع وموردين نعرفهم، ونفحص كل شحنة قبل استلامها.",
+          "en": "From farms and importers we know. Every delivery is checked at our door."
+        },
+        "tone": "leaf",
+        "image": "$media:produce",
+        "focusX": 30,
+        "focusY": 50
+      },
+      {
+        "id": "step031",
+        "hidden": false,
+        "title": {
+          "ar": "نخزّن",
+          "en": "Store"
+        },
+        "text": {
+          "ar": "مستودعنا في بنغازي يفصل الجاف عن المبرّد والمجمّد، ويُصرف الأقدم أولًا.",
+          "en": "Our Benghazi warehouse keeps dry, chilled and frozen apart, oldest out first."
+        },
+        "tone": "green",
+        "image": "$media:warehouse",
+        "focusX": 50,
+        "focusY": 50
+      },
+      {
+        "id": "step032",
+        "hidden": false,
+        "title": {
+          "ar": "نطبخ",
+          "en": "Cook"
+        },
+        "text": {
+          "ar": "وجبات يومية للشركات والمواقع والمناسبات، في أوعية قوت المغلقة.",
+          "en": "Daily meals for canteens, site camps and events, sealed in Qoot bowls."
+        },
+        "tone": "ochre",
+        "image": "$media:meals",
+        "focusX": 62,
+        "focusY": 60
+      },
+      {
+        "id": "step033",
+        "hidden": false,
+        "title": {
+          "ar": "نوصّل",
+          "en": "Deliver"
+        },
+        "text": {
+          "ar": "يوميًا داخل بنغازي، وبجدول ثابت إلى المدن والمواقع في كل ليبيا.",
+          "en": "Daily in Benghazi, and on a fixed schedule to cities and sites across Libya."
+        },
+        "tone": "sea",
+        "image": "$media:truck",
+        "focusX": 50,
+        "focusY": 56
+      }
+    ]
+  },
+  "who": {
+    "title": {
+      "ar": "من نخدم في ليبيا",
+      "en": "Who we feed across Libya"
+    },
+    "lede": {
+      "ar": "مقرّنا في بنغازي، ونطبخ ونورّد للأماكن التي تُبقي ليبيا تعمل.",
+      "en": "We’re based in Benghazi, and cook for and supply the places that keep Libya running."
+    },
+    "sectors": [
+      {
+        "id": "sector034",
+        "hidden": false,
+        "label": {
+          "ar": "حقول النفط والغاز",
+          "en": "Oil & gas camps"
+        },
+        "icon": "oil"
+      },
+      {
+        "id": "sector035",
+        "hidden": false,
+        "label": {
+          "ar": "مقاصف الشركات",
+          "en": "Staff canteens"
+        },
+        "icon": "canteen"
+      },
+      {
+        "id": "sector036",
+        "hidden": false,
+        "label": {
+          "ar": "المستشفيات والعيادات",
+          "en": "Hospitals & clinics"
+        },
+        "icon": "hospital"
+      },
+      {
+        "id": "sector037",
+        "hidden": false,
+        "label": {
+          "ar": "المدارس والجامعات",
+          "en": "Schools & universities"
+        },
+        "icon": "school"
+      },
+      {
+        "id": "sector038",
+        "hidden": false,
+        "label": {
+          "ar": "المطاعم والفنادق",
+          "en": "Restaurants & hotels"
+        },
+        "icon": "restaurant"
+      },
+      {
+        "id": "sector039",
+        "hidden": false,
+        "label": {
+          "ar": "الأعراس والمؤتمرات",
+          "en": "Weddings & conferences"
+        },
+        "icon": "events"
+      }
+    ],
+    "meaningTitle": {
+      "ar": "معنى الاسم",
+      "en": "What the name means"
+    },
+    "meaningText": {
+      "ar": "القوت هو ما يحتاجه البيت من طعام في يومه. وقوت المدينة هو طعام المدينة اليومي.",
+      "en": "In Arabic, qoot (قوت) is the food a household needs each day. Qoot Al Madinah is the city’s daily food."
+    },
+    "mapIntro": {
+      "ar": "خريطة ليبيا: مقرّنا في بنغازي، ونوصّل إلى",
+      "en": "Map of Libya: our base is in Benghazi, and we deliver to"
+    },
+    "hqLabel": {
+      "ar": "بنغازي",
+      "en": "Benghazi"
+    },
+    "cities": [
+      {
+        "id": "city040",
+        "hidden": false,
+        "city": "tripoli",
+        "label": {
+          "ar": "طرابلس",
+          "en": "Tripoli"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city041",
+        "hidden": false,
+        "city": "misrata",
+        "label": {
+          "ar": "مصراتة",
+          "en": "Misrata"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city042",
+        "hidden": false,
+        "city": "sirte",
+        "label": {
+          "ar": "سرت",
+          "en": "Sirte"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city043",
+        "hidden": false,
+        "city": "raslanuf",
+        "label": {
+          "ar": "رأس لانوف",
+          "en": "Ras Lanuf"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city044",
+        "hidden": false,
+        "city": "brega",
+        "label": {
+          "ar": "البريقة",
+          "en": "Brega"
+        },
+        "showLabel": false
+      },
+      {
+        "id": "city045",
+        "hidden": false,
+        "city": "ajdabiya",
+        "label": {
+          "ar": "أجدابيا",
+          "en": "Ajdabiya"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city046",
+        "hidden": false,
+        "city": "bayda",
+        "label": {
+          "ar": "البيضاء",
+          "en": "Al Bayda"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city047",
+        "hidden": false,
+        "city": "derna",
+        "label": {
+          "ar": "درنة",
+          "en": "Derna"
+        },
+        "showLabel": false
+      },
+      {
+        "id": "city048",
+        "hidden": false,
+        "city": "tobruk",
+        "label": {
+          "ar": "طبرق",
+          "en": "Tobruk"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city049",
+        "hidden": false,
+        "city": "jalu",
+        "label": {
+          "ar": "جالو",
+          "en": "Jalu"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city050",
+        "hidden": false,
+        "city": "kufra",
+        "label": {
+          "ar": "الكفرة",
+          "en": "Kufra"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city051",
+        "hidden": false,
+        "city": "sabha",
+        "label": {
+          "ar": "سبها",
+          "en": "Sabha"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city052",
+        "hidden": false,
+        "city": "ubari",
+        "label": {
+          "ar": "أوباري",
+          "en": "Ubari"
+        },
+        "showLabel": true
+      },
+      {
+        "id": "city053",
+        "hidden": false,
+        "city": "ghat",
+        "label": {
+          "ar": "غات",
+          "en": "Ghat"
+        },
+        "showLabel": true
+      }
+    ],
+    "facts": [
+      {
+        "id": "fact054",
+        "hidden": false,
+        "label": {
+          "ar": "مقرّنا",
+          "en": "Based in"
+        },
+        "value": {
+          "ar": "بنغازي، ليبيا",
+          "en": "Benghazi, Libya"
+        }
+      },
+      {
+        "id": "fact055",
+        "hidden": false,
+        "label": {
+          "ar": "التوصيل",
+          "en": "Delivery"
+        },
+        "value": {
+          "ar": "يوميًا داخل بنغازي، وبجدول ثابت إلى كل ليبيا",
+          "en": "Daily in Benghazi; scheduled runs across Libya"
+        }
+      },
+      {
+        "id": "fact056",
+        "hidden": false,
+        "label": {
+          "ar": "ساعات العمل",
+          "en": "Hours"
+        },
+        "value": {
+          "ar": "السبت إلى الخميس، 8:00 – 17:00",
+          "en": "Saturday to Thursday, 8:00 – 17:00"
+        }
+      }
+    ],
+    "ctaLabel": {
+      "ar": "تواصل معنا",
+      "en": "Contact us"
+    },
+    "ctaTarget": "#contact"
+  },
+  "news": {
+    "title": {
+      "ar": "آخر الأخبار",
+      "en": "Latest news"
+    },
+    "intro": {
+      "ar": "ما يجري في قوت: عقود جديدة، مواسم التوريد، وما يتغير في طريقة عملنا.",
+      "en": "What is happening at Qoot: new contracts, supply seasons and changes to how we work."
+    },
+    "homeCount": 3,
+    "viewAllLabel": {
+      "ar": "كل الأخبار",
+      "en": "All news"
+    },
+    "readMoreLabel": {
+      "ar": "اقرأ الخبر",
+      "en": "Read the story"
+    },
+    "emptyText": {
+      "ar": "لا توجد أخبار منشورة بعد. عد قريبًا.",
+      "en": "No news has been published yet. Check back soon."
+    },
+    "hideWhenEmpty": true
+  },
+  "faq": {
+    "title": {
+      "ar": "أسئلة يطرحها عملاؤنا",
+      "en": "Questions we’re asked"
+    },
+    "sideTitle": {
+      "ar": "تحدّث معنا",
+      "en": "Talk to us"
+    },
+    "items": [
+      {
+        "id": "faq057",
+        "hidden": false,
+        "question": {
+          "ar": "إلى أي مناطق توصّلون؟",
+          "en": "Which areas do you deliver to?"
+        },
+        "answer": {
+          "ar": "نوصّل داخل بنغازي يوميًا، ونصل إلى المدن ومواقع العمل في كل ليبيا بجدول ثابت، من طرابلس غربًا إلى طبرق شرقًا وسبها والكفرة جنوبًا. أخبرنا بموقعك لنؤكد موعد التوصيل.",
+          "en": "We deliver across Benghazi every day, and to cities and work sites all over Libya on a fixed schedule, from Tripoli to Tobruk and down to Sabha and Kufra. Tell us your location and we’ll confirm the run."
+        }
+      },
+      {
+        "id": "faq058",
+        "hidden": false,
+        "question": {
+          "ar": "هل هناك حد أدنى للطلب؟",
+          "en": "Is there a minimum order?"
+        },
+        "answer": {
+          "ar": "نعم، ويعتمد على مسافة التوصيل. تواصل معنا ونخبرك به بوضوح.",
+          "en": "Yes. It depends on the delivery distance; contact us and we’ll tell you exactly."
+        }
+      },
+      {
+        "id": "faq059",
+        "hidden": false,
+        "question": {
+          "ar": "هل كل اللحوم حلال؟",
+          "en": "Is all your meat halal?"
+        },
+        "answer": {
+          "ar": "نعم. كل اللحوم والدواجن التي نورّدها أو نطبخها حلال، ونشارك شهادات الموردين عند الطلب.",
+          "en": "Yes. All meat and poultry we supply or cook is halal, and we can share supplier certificates on request."
+        }
+      },
+      {
+        "id": "faq060",
+        "hidden": false,
+        "question": {
+          "ar": "هل تطبخون لمناسبة واحدة؟",
+          "en": "Can you cater a one-off event?"
+        },
+        "answer": {
+          "ar": "نعم. نطبخ للأعراس والمؤتمرات ومناسبات الشركات. أبلغنا قبل أسبوع على الأقل مع عدد الضيوف.",
+          "en": "Yes. We cook for weddings, conferences and company events. Give us at least a week’s notice and the number of guests."
+        }
+      },
+      {
+        "id": "faq061",
+        "hidden": false,
+        "question": {
+          "ar": "هل يمكنكم إدارة المطبخ في مخيم موقعنا؟",
+          "en": "Can you run the kitchen at our site camp?"
+        },
+        "answer": {
+          "ar": "نعم. نورّد المواد لمطبخكم فقط، أو نرسل طهاتنا لإدارته مع إعاشة كاملة.",
+          "en": "Yes. We can supply your kitchen with ingredients only, or send our cooks to run it with full-board meals."
+        }
+      },
+      {
+        "id": "faq062",
+        "hidden": false,
+        "question": {
+          "ar": "كيف تُسعَّر العقود؟",
+          "en": "How is a contract priced?"
+        },
+        "answer": {
+          "ar": "تُسعَّر الإعاشة بالفرد في اليوم، والتوريد حسب قائمة الأسعار. تواصل معنا ونرسل لك الأسعار مكتوبة خلال يومي عمل.",
+          "en": "Catering is priced per person per day, and supplies by price list. Contact us and we send written prices within two working days."
+        }
+      }
+    ],
+    "morePrefix": {
+      "ar": "لم تجد إجابتك؟",
+      "en": "Didn’t find your answer?"
+    },
+    "moreLinkLabel": {
+      "ar": "اسألنا على {email}",
+      "en": "Ask us at {email}"
+    }
+  },
+  "contact": {
+    "title": {
+      "ar": "تواصل معنا",
+      "en": "Contact us"
+    },
+    "sub": {
+      "ar": "اكتب لنا ما تحتاجه، وسنتصل بك خلال يومي عمل.",
+      "en": "Tell us what you need and we’ll call you back within two working days."
+    },
+    "directLabel": {
+      "ar": "أو تواصل معنا مباشرة",
+      "en": "Or reach us directly"
+    },
+    "whatsappLabel": {
+      "ar": "راسلنا على واتساب",
+      "en": "Message us on WhatsApp"
+    },
+    "image": "$media:oranges",
+    "nameLabel": {
+      "ar": "الاسم",
+      "en": "Name"
+    },
+    "namePlaceholder": {
+      "ar": "اسمك أو اسم الجهة",
+      "en": "Your name or organisation"
+    },
+    "phoneLabel": {
+      "ar": "رقم الهاتف",
+      "en": "Phone number"
+    },
+    "phonePlaceholder": {
+      "ar": "091 234 5678",
+      "en": "+218 91 234 5678"
+    },
+    "emailLabel": {
+      "ar": "البريد الإلكتروني",
+      "en": "Email"
+    },
+    "emailPlaceholder": {
+      "ar": "name@example.com",
+      "en": "name@example.com"
+    },
+    "optionalLabel": {
+      "ar": "اختياري",
+      "en": "optional"
+    },
+    "messageLabel": {
+      "ar": "رسالتك",
+      "en": "Your message"
+    },
+    "messagePlaceholder": {
+      "ar": "كيف يمكننا مساعدتك؟",
+      "en": "How can we help?"
+    },
+    "submitLabel": {
+      "ar": "أرسل الرسالة",
+      "en": "Send message"
+    },
+    "msgNameMissing": {
+      "ar": "اكتب اسمك لنعرف بمن نتصل.",
+      "en": "Tell us your name so we know who to call."
+    },
+    "msgPhoneInvalid": {
+      "ar": "اكتب رقم هاتف صحيحًا لنتصل بك.",
+      "en": "Add a phone number we can call you on."
+    },
+    "msgEmailInvalid": {
+      "ar": "البريد الإلكتروني غير صحيح. صحّحه أو اتركه فارغًا.",
+      "en": "That email address doesn’t look right. Fix it or leave it empty."
+    },
+    "msgMessageMissing": {
+      "ar": "اكتب رسالتك أولًا.",
+      "en": "Write your message first."
+    },
+    "msgSending": {
+      "ar": "جارٍ الإرسال…",
+      "en": "Sending…"
+    },
+    "msgSuccess": {
+      "ar": "وصلت رسالتك. سنتصل بك خلال يومي عمل.",
+      "en": "Your message has arrived. We’ll get back to you within two working days."
+    },
+    "msgError": {
+      "ar": "تعذّر إرسال الرسالة. حاول مجددًا، أو اتصل بنا مباشرة.",
+      "en": "We couldn’t send your message. Try again, or contact us directly."
+    }
+  },
+  "visit": {
+    "title": {
+      "ar": "زورونا في بنغازي",
+      "en": "Visit us in Benghazi"
+    },
+    "lede": {
+      "ar": "تفضّل بزيارتنا في مقرّنا، أو افتح الموقع في خرائط Google لتحصل على الاتجاهات.",
+      "en": "Drop by our base, or open the pin in Google Maps for directions."
+    },
+    "mapsLabel": {
+      "ar": "افتح في خرائط Google",
+      "en": "Open in Google Maps"
+    },
+    "callLabel": {
+      "ar": "اتصل قبل زيارتك",
+      "en": "Call before you visit"
+    },
+    "newTabLabel": {
+      "ar": "(يُفتح في نافذة جديدة)",
+      "en": "(opens in a new tab)"
+    },
+    "hoursRows": [
+      {
+        "id": "hours067",
+        "hidden": false,
+        "label": {
+          "ar": "السبت إلى الخميس",
+          "en": "Saturday to Thursday"
+        },
+        "value": {
+          "ar": "8:00 – 17:00",
+          "en": "8:00 – 17:00"
+        },
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "hours068",
+        "hidden": false,
+        "label": {
+          "ar": "الجمعة",
+          "en": "Friday"
+        },
+        "value": {
+          "ar": "مغلق",
+          "en": "Closed"
+        },
+        "days": [
+          5
+        ]
+      }
+    ],
+    "statusOpen": {
+      "ar": "مفتوح الآن، حتى {to}",
+      "en": "Open now, until {to}"
+    },
+    "statusToday": {
+      "ar": "مغلق الآن، نفتح اليوم الساعة {from}",
+      "en": "Closed now, opens today at {from}"
+    },
+    "statusTomorrow": {
+      "ar": "مغلق الآن، نفتح غدًا الساعة {from}",
+      "en": "Closed now, opens tomorrow at {from}"
+    },
+    "statusDay": {
+      "ar": "مغلق الآن، نفتح يوم {day} الساعة {from}",
+      "en": "Closed now, opens {day} at {from}"
+    },
+    "clock": {
+      "ar": "الساعة الآن في بنغازي {time}",
+      "en": "It’s {time} in Benghazi"
+    },
+    "mapTitle": {
+      "ar": "خريطة ساحل بنغازي على البحر المتوسط",
+      "en": "Map of the Benghazi coast on the Mediterranean"
+    },
+    "seaLabel": {
+      "ar": "البحر المتوسط",
+      "en": "Mediterranean Sea"
+    },
+    "cityLabel": {
+      "ar": "بنغازي",
+      "en": "Benghazi"
+    },
+    "scaleLabel": {
+      "ar": "5 كم",
+      "en": "5 km"
+    }
+  },
+  "footer": {
+    "lines": [
+      {
+        "id": "line069",
+        "hidden": false,
+        "text": {
+          "ar": "© {year} قوت للتعهدات والتموين، بنغازي",
+          "en": "© {year} Qoot Catering & Supplies, Benghazi"
+        }
+      },
+      {
+        "id": "line070",
+        "hidden": false,
+        "text": {
+          "ar": "الاحترافية هي حجر الأساس في كل ما نقوم به.",
+          "en": "Professionalism is the cornerstone of everything we do."
+        }
+      },
+      {
+        "id": "line071",
+        "hidden": false,
+        "text": {
+          "ar": "خط الساحل في الخريطة من بيانات GSHHG",
+          "en": "Map coastline from GSHHG data"
+        }
+      }
+    ],
+    "backToTopLabel": {
+      "ar": "العودة إلى الأعلى",
+      "en": "Back to top"
+    },
+    "contactLabel": {
+      "ar": "معلومات التواصل",
+      "en": "Contact details"
+    }
+  }
+}

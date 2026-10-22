@@ -1,0 +1,63 @@
+{
+  "siteName": {
+    "ar": "قوت للتعهدات والتموين",
+    "en": "Qoot Catering & Supplies"
+  },
+  "logoAr": "$media:wordmark-ar-green",
+  "logoEn": "$media:wordmark-en-green",
+  "footerMarkAr": "$media:wordmark-ar-cream",
+  "footerMarkEn": "$media:wordmark-en-cream",
+  "siteUrl": "https://www.qoot.com",
+  "seoTitle": {
+    "ar": "Qoot قوت | شركة تعهدات وتموين غذائي وإعاشة في بنغازي",
+    "en": "Qoot | Catering & Food Supply Company in Benghazi, Libya"
+  },
+  "seoDescription": {
+    "ar": "قوت للتعهدات والتموين في بنغازي، ليبيا: إعاشة وتوريد مواد غذائية بالجملة للشركات ومخيمات حقول النفط والمستشفيات والمدارس والمناسبات، من المصدر حتى التوصيل.",
+    "en": "Qoot Catering & Supplies in Benghazi, Libya: daily contract catering and wholesale food supply for companies, oil field camps, hospitals, schools and events."
+  },
+  "ogImage": "$media:og",
+  "ogImageAlt": {
+    "ar": "شعار قوت المدينة ونافذة على شكل حرف Q تطل على مستودع للمواد الغذائية",
+    "en": "The Qoot Al Madinah logo beside a Q-shaped window onto a food warehouse"
+  },
+  "email": "info@qoot.com",
+  "phone": "+218123456789",
+  "phoneDisplay": "+218 123 456 789",
+  "address": {
+    "ar": "بنغازي، ليبيا",
+    "en": "Benghazi, Libya"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/pmTEDtSWm7e6Qe8a8",
+  "socialLinks": [
+    {
+      "id": "social072",
+      "hidden": false,
+      "network": "instagram",
+      "url": "https://www.instagram.com/qoot.ly"
+    },
+    {
+      "id": "social073",
+      "hidden": false,
+      "network": "facebook",
+      "url": "https://www.facebook.com/qoot.ly"
+    }
+  ],
+  "openDays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "opensAt": "08:00",
+  "closesAt": "17:00",
+  "timeZone": "Africa/Tripoli",
+  "defaultLanguage": "ar",
+  "enabledLanguages": [
+    "ar",
+    "en"
+  ],
+  "notifyEmail": ""
+}

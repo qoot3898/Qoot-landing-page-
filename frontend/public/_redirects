@@ -1,0 +1,12 @@
+# Page routes for static hosts that read _redirects (Netlify, Cloudflare Pages).
+# Only needed when the website is hosted apart from the API (VITE_API_BASE_URL set).
+# When the .NET API serves the site (recommended) it does this itself and also writes
+# each page's search metadata into the HTML.
+/en           /en/                301
+/news         /news/              301
+/en/news      /en/news/           301
+/admin        /admin/             301
+/admin/*      /admin/index.html   200
+/news/*       /news.html          200
+/en/news/*    /news.html          200
+/en/*         /index.html         200

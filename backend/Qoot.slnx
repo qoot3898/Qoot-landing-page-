@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Qoot.Api/Qoot.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Qoot.Api.Tests/Qoot.Api.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Qoot.MigrationsTool/Qoot.MigrationsTool.csproj" />
+  </Folder>
+</Solution>
